@@ -1,3 +1,9 @@
 <?php
-echo "Hello world";
+
+
+class UnitTest {
+    public function testAdd() {
+        echo "Hello world";
+    }
+}
 ?>
