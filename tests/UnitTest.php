@@ -1,8 +1,8 @@
 <?php
 
-use PHPUnit\Framework\TestCase;
+use PHPUnit\Framework\UnitTest;
 
-class CalculatorTest extends TestCase {
+class CalculatorTest extends UnitTest {
     public function testAdd() {
         echo "Hello world";
     }
