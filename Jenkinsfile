@@ -13,7 +13,7 @@ pipeline {
             steps {
                 bat 'composer update'
                 //bat 'vendor/bin/phpunit'
-                bat "docker-compose run --rm php-environment phpunit tests/UnitTest.php"
+                bat "docker-compose run --rm php-environment phpunit tests/UserTest.php"
         }
         }
         stage('Deploy') {
