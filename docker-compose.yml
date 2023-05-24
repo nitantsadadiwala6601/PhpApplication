@@ -9,9 +9,16 @@ services:
       - mariadb
     volumes:
       - ./src:/var/www/html/
-      - ./tests:/var/www/html/tests
     ports:
       - 8000:80
+  testing-environment:
+    build:
+      context: ./tests
+      dockerfile: Dockerfile
+    depends_on:
+      - php-environment
+    volumes:
+      - ./tests:/var/www/html/tests
   mariadb:
     container_name: mariadb
     image: mariadb
