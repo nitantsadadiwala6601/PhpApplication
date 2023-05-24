@@ -14,7 +14,7 @@ services:
       - 8000:80
   mariadb:
     container_name: mariadB
-    image: mariadb
+    image: mariadB
     restart: always
     environment:
       MYSQL_ROOT_PASSWORD: root
