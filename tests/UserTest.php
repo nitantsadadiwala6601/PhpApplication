@@ -1,5 +1,5 @@
 <?php
-
+include "./src/User.php";
 use PHPUnit\Framework\TestCase;
 
 final class UserTest extends TestCase
