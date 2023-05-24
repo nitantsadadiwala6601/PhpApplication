@@ -6,7 +6,7 @@ services:
       context: ./src
       dockerfile: Dockerfile
     depends_on:
-      - mariadB
+      - mariadb
     volumes:
       - ./src:/var/www/html/
       - ./tests:/var/www/html/tests
