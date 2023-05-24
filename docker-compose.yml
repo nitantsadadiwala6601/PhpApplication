@@ -1,7 +1,7 @@
 version: '3.2'
 services:
   php-environment:
-    container_name: php-apaches
+    container_name: php-apache
     build:
       context: ./src
       dockerfile: Dockerfile
@@ -13,8 +13,8 @@ services:
     ports:
       - 8000:80
   mariadb:
-    container_name: mariadB
-    image: mariadB
+    container_name: mariadb
+    image: mariadb
     restart: always
     environment:
       MYSQL_ROOT_PASSWORD: root
