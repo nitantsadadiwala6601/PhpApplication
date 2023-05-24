@@ -22,10 +22,10 @@ pipeline {
             }
         }
 
-        stage('Cleanup') {
-            steps {
-                bat "docker-compose down"
-            }
-        }
+        // stage('Cleanup') {
+        //     steps {
+        //         bat "docker-compose down"
+        //     }
+        // }
     }
 }
