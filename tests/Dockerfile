@@ -9,5 +9,5 @@ RUN apt-get update && \
     apt-get install -y wget && \
     wget https://phar.phpunit.de/phpunit-9.phar -O /usr/local/bin/phpunit && \
     chmod +x /usr/local/bin/phpunit
-
+ENTRYPOINT [ "./vendor/bin/phpunit" ] 
 WORKDIR /var/www/html
