@@ -15,7 +15,7 @@ services:
   mariadb:
     container_name: mariadb
     image: mariadb
-    restart: never
+    restart: always
     environment:
       MYSQL_ROOT_PASSWORD: root
       MYSQL_DATABASE: php_app_db
