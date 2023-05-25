@@ -1,5 +1,5 @@
 FROM php:8.0-apache
-RUN docker-php-ext-install && docker-php-ext-enable mysqli
+
 
 RUN apt-get update && \
     apt-get install -y wget && \
@@ -8,5 +8,5 @@ RUN apt-get update && \
     rm /tmp/composer-setup.php && \
     wget https://phar.phpunit.de/phpunit-9.phar -O /usr/local/bin/phpunit && \
     chmod +x /usr/local/bin/phpunit
-# ENTRYPOINT [ "./vendor/bin/phpunit" ] 
+
 WORKDIR /var/www/html
