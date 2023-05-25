@@ -3,7 +3,7 @@
 
 class UnitTest {
     public function testAdd() {
-        echo "Hello world!";
+        echo "Hello world!!!";
     }
 }
 ?>  
