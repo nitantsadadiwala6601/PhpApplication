@@ -1,5 +1,5 @@
 FROM php:8.0-apache
-RUN docker-php-ext-install && docker-php-ext-enable mysqli
+RUN docker-php-ext-install
 
 RUN apt-get update && \
     apt-get install -y wget && \
